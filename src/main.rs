@@ -370,8 +370,17 @@ fn main() {
                                     &klines.next().unwrap()
                                 )
                             }
-                            "\"chainwork\"" | "\"blocks\"" | "\"size_on_disk\""
+                            "\"blocks\"" | "\"size_on_disk\""
                             | "\"bestblockhash\"" => {
+                                println!(
+                                    "\x1b[48;5;232m\x1b[38;5;228m{}{}{}\x1b[0m",
+                                    &kvc,
+                                    &klines.next().unwrap(),
+                                    &klines.next().unwrap()
+                                )
+                            }
+				"\"chainwork\"" => {
+				println!();
                                 println!(
                                     "\x1b[48;5;232m\x1b[38;5;228m{}{}{}\x1b[0m",
                                     &kvc,
