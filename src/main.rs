@@ -205,6 +205,7 @@ fn main() {
     let chaininfo1 = "' --user \"";
 
     //Goes after the API key.
+    //The "id" is arbitrary.
     let chaininfo2 = "\" --header 'Content-Type: application/json' --data-raw '{
 			\"jsonrpc\": \"2.0\",
 			\"id\": \"getblock.io\",
@@ -215,8 +216,6 @@ fn main() {
     chaininfo.push_str(&chaininfo1);
     chaininfo.push_str(&pb_api);
     chaininfo.push_str(&chaininfo2);
-    //
-    //curl --location --request POST 'https://zec.getblock.io/e7a92777-136d-4d0b-9eea-1ad3aea31b37/mainnet' --header '7a92777-136d-4d0b-9eea-1ad3aea31b37;' --header 'Content-Type: application/json' --data-raw '{\"jsonrpc\": \"2.0\",\"id\": \"healthcheck\",\"method\":
     //
 
     //The main program loop.
