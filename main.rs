@@ -405,7 +405,7 @@ fn main() {
                                     &klines.next().unwrap()
                                 )
                             }
-                            "\"sapling\"," | "\"orchard\"," | "\"sprout\"," => {
+                            "\"sapling\"," | "\"orchard\"," | "\"sprout\"," | "\"transparent\"," => {
                                 println!("\x1b[48;5;232m\x1b[38;5;159m\"pool\":{}\x1b[0m", &kvc);
                             }
                             _ => {} //End of match kvc.
